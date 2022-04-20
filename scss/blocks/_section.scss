@@ -1,0 +1,195 @@
+.hero-page {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/heropage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__text {
+        @include flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 250px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 150px;
+        line-height: 176px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__arrrow {
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;;
+    }
+}
+.heading-page__card {
+    margin-top: 60px;
+    @include flex;
+    justify-content: space-between;
+}
+.card {
+    margin-left: 40px;
+    max-width: 320px;
+    @include flex;
+    flex-direction: column;
+    &-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-subtitle {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.about {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: #F95252;
+    &-img {
+        border-radius: 12px;
+    }
+    &-text {
+        margin-left: 30px;
+        max-width: 560px;
+        &__title {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+        &__subtitle {
+            padding-top: 20px;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 41px;
+            color: #FFFFFF;
+            margin-bottom: 40px
+        }
+        &__button {
+            @include flex;
+            justify-content: space-between;
+        }
+        &__link {
+            background: #FFFFFF;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            color: #F95252;
+            padding: 25px 80px;
+            &:hover {
+                background-color: #004897;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+}
+.section-about {
+    padding: 40px 0;
+    @include flex;
+    justify-content: space-between;
+}
+.clients {
+    background-color: #004897;
+    &-title {
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 76px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 60px;
+    }
+}
+.clients-card {
+    max-width: 368px;
+    max-height: 316px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 40px 25px;
+    @include flex;
+    flex-direction: column;
+    &s {
+        @include flex;
+        justify-content: space-between;
+        &--margin {
+            margin: 0 30px;
+        }
+    }
+    &__subtitle {
+        max-width: 252px;
+        max-height: 131px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__text {
+        @include flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__user {
+        margin-right: 10px;
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #C4C4C4;
+        @include flex;
+        justify-content: center;
+        color: #004897;
+    }
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #00264F;
+    &-title {
+        padding-top: 70px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &-form {
+        background-color: #00264F;
+        margin-top: 40px;
+        @include flex;
+        flex-direction: column;
+    }
+}
+input::placeholder {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #00264F;
+    opacity: 0.8;
+    
+}
+.text {
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    width: 555px;
+    height: 53px;
+    padding: 20px 0;
+    text-indent: 30px;
+    &-line {
+        padding-bottom: 200px;
+    }
+}
+.line {
+    padding-bottom: 400px;
+}
